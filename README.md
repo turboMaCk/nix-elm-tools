@@ -28,7 +28,7 @@ These are the rules followed:
 2. [x] Builds are fast (eg. we avoid usage of stack2nix and large rebuilds onf hackage/stackage)
 3. [ ] Easy to pull from remote
 4. [x] Nixpkgs like conventions
-5. [ ] Linux and MacOS portability
+5. [x] Linux and MacOS portability
 6. [x] Utilizing existing nix tooling
 
 ## Components
