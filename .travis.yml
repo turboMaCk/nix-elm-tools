@@ -9,7 +9,7 @@ script:
   - nix-env -i elm
   - nix-env -f default.nix -i
   - export PATH=$PATH:$HOME/.nix-profile/bin
-  - elm-test tests
+  - pushd tests; elm-test; popd
   - pushd tests; elm-verify-examples; popd
   - pushd tests; elm-analyse; popd
   - elm-doc-preview --version
