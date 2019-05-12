@@ -1,7 +1,6 @@
-{ nodePackages, writeScriptBin, elmi-to-json, stdenv, ... }:
+{ elmi-to-json, writeScriptBin, stdenv }:
 let
-  # Patching binwrap
-  # by NoOp script
+  # Patching binwrap by NoOp script
   binwrap = writeScriptBin "binwrap" ''
     #! ${stdenv.shell}
     echo "binwrap called: Returning 0"
@@ -12,7 +11,7 @@ let
     echo "binwrap-install called: Doing nothing"
   '';
 in
-nodePackages.elm-test.override {
+{
   buildInputs = [ binwrap binwrap-install ];
 
   # Manually install elmi-to-json binary
