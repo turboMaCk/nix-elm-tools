@@ -1,0 +1,17 @@
+{
+    "type": "package",
+    "name": "turboMaCk/lazy-tree-with-zipper",
+    "summary": "Lazy rose tree (multiway tree) with zipper.",
+    "license": "BSD-3-Clause",
+    "version": "3.1.0",
+    "exposed-modules": [
+        "Lib"
+    ],
+    "elm-version": "0.19.0 <= v < 0.20.0",
+    "dependencies": {
+        "elm/core": "1.0.0 <= v < 2.0.0"
+    },
+    "test-dependencies": {
+        "elm-explorations/test": "1.0.0 <= v < 2.0.0"
+    }
+}

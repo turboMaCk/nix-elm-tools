@@ -1,0 +1,13 @@
+language: nix
+nix: 2.1.3
+
+before_install:
+  - nix-channel --add https://nixos.org/channels/nixos-19.03 nixpkgs
+  - nix-channel --update
+
+script:
+  - nix-env -f default.nix -i
+  - elm-test
+  - elm-verify-examples
+  - elm-analyse
+  - elm-doc-preview --version
