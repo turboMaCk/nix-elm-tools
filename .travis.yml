@@ -6,6 +6,7 @@ before_install:
   - nix-channel --update
 
 script:
+  - nix-env -i elm
   - nix-env -f default.nix -i
   - export PATH=$PATH:$HOME/.nix-profile/bin
   - elm-test
