@@ -46,7 +46,7 @@ If you miss your favorite tool feel free to open an issue or send a PR.
 
 ## Usage
 
-Instal a tool from source:
+Nix-env from source:
 
 ```shell
 # clone project
@@ -60,7 +60,7 @@ building '/nix/store/bf69nj0mzfqajgip1bpxwg05y1zh7191-user-environment.drv'...
 created 21 symlinks in user environment
 ```
 
-Dotfiles remote install:
+remote install:
 
 ```nix
 let
@@ -78,7 +78,7 @@ in
 }
 ```
 
-Project nix-shell remote install:
+nix-shell remote install:
 
 ```nix
 { pkgs ? import <nixpkgs> {} }:
