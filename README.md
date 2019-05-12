@@ -47,8 +47,11 @@ If you miss your favorite tool feel free to open an issue or send a PR.
 Instal a tool from source:
 
 ```shell
+# clone project
 $ git clone https://github.com/turboMaCk/nix-elm-tools.git
 $ cd nix-elm-tools
+
+# install elm-test
 $ nix-env -f default.nix -iA elm-test
 installing 'node-elm-test-0.19.0-rev6'
 building '/nix/store/bf69nj0mzfqajgip1bpxwg05y1zh7191-user-environment.drv'...
@@ -67,7 +70,7 @@ let
     repo = "nix-elm-tools";
     rev = "";
     sha256 = "";
-  })
+  });
 in
 {
     inherit (elmTools) elm-test elm-verify-examples;
