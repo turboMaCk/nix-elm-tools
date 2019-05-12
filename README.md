@@ -69,8 +69,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "";
-    sha256 = "";
+    rev = "b2c9d05796c85eeaf2424fc3ce7da4a16bb5ae48";
+    sha256 = "1gzcvzpgcqb3bx162fxy299h8arkjhmv8gafl5ja6lnq9l5iqbzv";
   }) { inherit pkgs; };
 in
 {
@@ -86,8 +86,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "";
-    sha256 = "";
+    rev = "b2c9d05796c85eeaf2424fc3ce7da4a16bb5ae48";
+    sha256 = "1gzcvzpgcqb3bx162fxy299h8arkjhmv8gafl5ja6lnq9l5iqbzv";
   }) { inherit pkgs; };
 in
   with pkgs;
@@ -105,8 +105,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "e2014925d60867c1e8f07e4bd5cbaeec3a484fff";
-    sha256 = "10v3h3mmxx20dn93nwsm86grd3qqzllsyf46m6bj6d8grxfil3x8";
+    rev = "b2c9d05796c85eeaf2424fc3ce7da4a16bb5ae48";
+    sha256 = "1gzcvzpgcqb3bx162fxy299h8arkjhmv8gafl5ja6lnq9l5iqbzv";
   }) { inherit pkgs; };
 in {
     environment.systemPackages = with pkgs.elmPackages; [
