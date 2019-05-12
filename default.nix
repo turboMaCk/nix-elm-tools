@@ -3,7 +3,7 @@ let
   elmi-to-json =
     (import ./elmi-to-json.nix { inherit pkgs; }).blob;
 
-  elmNodePackages = pkgs.nodePackages //
+  elmNodePackages =
     import ./composition.nix {
       inherit pkgs;
       inherit (pkgs) nodejs;
