@@ -25,8 +25,8 @@ and therefore this project uses 2nd approach to provide elm lang tooling to nix 
 These are the rules followed:
 
 1. [x] Builds on NixOS
-2. [x] Builds are fast (eg. we avoid usage of stack2nix and large rebuilds onf hackage/stackage)
-3. [ ] Easy to pull from remote
+2. [x] Builds are reasonably fast (eg. we avoid usage of stack2nix and large rebuilds of Haskell packages)
+3. [x] Easy to pull from remote
 4. [x] Nixpkgs like conventions
 5. [x] Linux and MacOS portability
 6. [x] Utilizing existing nix tooling
@@ -58,22 +58,64 @@ building '/nix/store/bf69nj0mzfqajgip1bpxwg05y1zh7191-user-environment.drv'...
 created 21 symlinks in user environment
 ```
 
-Installing from remote:
+Dotfiles remote install:
 
 ```nix
-# your dotfiles
 let
   pkgs = import <nixpkgs> {};
 
-  elmTools = import (pkgs.fetchFromGithub {
+  elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
     rev = "";
     sha256 = "";
-  });
+  }) { inherit pkgs; };
 in
 {
-    inherit (elmTools) elm-test elm-verify-examples;
+  inherit (elmTools) elm-test elm-verify-examples;
+}
+```
+
+Project nix-shell remote install:
+
+```nix
+{ pkgs ? import <nixpkgs> {} }:
+let
+  elmTools = import (pkgs.fetchFromGitHub {
+    owner = "turboMaCk";
+    repo = "nix-elm-tools";
+    rev = "";
+    sha256 = "";
+  }) { inherit pkgs; };
+in
+  with pkgs;
+  mkShell {
+    buildInputs = with elmTools; [ elm-test elm-verify-examples ];
+  }
+```
+
+NixOS configuration remote install:
+
+```nix
+{ pkgs, ... }:
+
+let
+  elmTools = import (pkgs.fetchFromGitHub {
+    owner = "turboMaCk";
+    repo = "nix-elm-tools";
+    rev = "e2014925d60867c1e8f07e4bd5cbaeec3a484fff";
+    sha256 = "10v3h3mmxx20dn93nwsm86grd3qqzllsyf46m6bj6d8grxfil3x8";
+  }) { inherit pkgs; };
+in {
+    environment.systemPackages = with pkgs.elmPackages; [
+        elm
+        elm-format
+        pkgs.elm2nix
+        elmTools.elm-test
+        elmTools.elm-verify-examples
+        elmTools.elm-analyse
+        elmTools.elm-doc-preview
+    ];
 }
 ```
 
@@ -90,12 +132,6 @@ In order to make to expose the tool to users,
 edit the `default.nix` file and expose it.
 In case tool depends on `elmi-to-json` binary (usually installed)
 via npm with `binwrap` apply the patch (see `elm-test` as an example).
-
-## Todo
-
-Planned improvements
-
-- [ ] elmi-to-json build from source
 
 ## Get More!
 
