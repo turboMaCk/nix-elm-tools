@@ -6,9 +6,10 @@ before_install:
   - nix-channel --update
 
 script:
+  - nix-env -i elm
   - nix-env -f default.nix -i
-  - EXPORT PATH=$PATH:$HOME/.nix-profile/bin
-  - elm-test
-  - elm-verify-examples
-  - elm-analyse
+  - export PATH=$PATH:$HOME/.nix-profile/bin
+  - pushd tests; elm-test; popd
+  - pushd tests; elm-verify-examples; popd
+  - pushd tests; elm-analyse; popd
   - elm-doc-preview --version
