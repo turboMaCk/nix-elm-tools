@@ -1,5 +1,7 @@
 # Nix Elm Tools
 
+[![Build Status](https://travis-ci.org/turboMaCk/nix-elm-tools.svg?branch=master)](https://travis-ci.org/turboMaCk/nix-elm-tools)
+
 [Elm](https://elm-lang.org/) lang community tooling
 for the [Nix package manager](https://nixos.org/nix/) and [NixOS](http://nixos.org)
 operating system.
