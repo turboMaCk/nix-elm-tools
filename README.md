@@ -8,18 +8,18 @@ operating system.
 
 ## Motivation
 
-Getting all the existing community tooling for Elm language setuped with nix is painful.
-This is mostly due to the usage of binary wrappers and mixtures of
-haskell binaries and node.js based parts of tooling. For instance `nodePackages.elm-test`
-provided by [nixpkgs](https://github.com/NixOS/nixpkgs)
-isn't working. I believe this situation can be improved!
+Getting all the existing community tooling for Elm language running with nix is painful.
+This is mostly due to the usage of [binary wrappers](https://github.com/avh4/binwrap) to make
+haskell binaries and node.js work together. For instance `nodePackages.elm-test`
+provided by [nixpkgs](https://github.com/NixOS/nixpkgs) as of today
+isn't working. I believe situation can be improved though!
 Generally there are two ways to do so:
 
-1. Remove all the hacks in upstream packages to make them nix compatible by default.
-2. Implement custom nix builds specific to elm tooling with patches for the issues.
+1. Remove all the hacks in upstream packages to make them nix compatible out of the box.
+2. Implement custom nix specific builds for elm tooling with nix specific patches.
 
-Given that nix users makes only tiny fraction of the users of those tools I think
-it would be naive to impose restrictions and push more work on tooling maitainers
+Given that nix users makes only for a tiny fraction elm community I believe
+it would be naive to try to enforce compatibility directly in upstream packages
 and therefore this project uses 2nd approach to provide elm lang tooling to nix community.
 
 ## Rules
@@ -35,18 +35,18 @@ These are the rules followed:
 
 ## Components
 
-So far we provide these tools:
+Tooling provided so far:
 
 - [elm-test](https://github.com/rtfeldman/node-test-runner)
 - [elm-verify-examples](https://github.com/stoeffel/elm-verify-examples)
 - [elm-analyse](https://github.com/stil4m/elm-analyse)
 - [elm-doc-preview](https://github.com/dmy/elm-doc-preview)
 
-If you miss your favorite tool feel free to open an issue or send a PR.
+If you miss your favorite tool, feel free to open an issue or submit a PR.
 
 ## Usage
 
-Nix-env from source:
+nix-env from source:
 
 ```shell
 # clone project
@@ -96,7 +96,7 @@ in
   }
 ```
 
-NixOS configuration remote install:
+nixos configuration remote install:
 
 ```nix
 { pkgs, ... }:
@@ -123,17 +123,20 @@ in {
 
 ## Developement
 
-All contributions are welcome. If you want to add a tool available via npm
-add it to `packages.json` and genereta new files using script.
+All contributions are welcome. If you want to add a tool available via npm,
+add it to `packages.json` and generete new nix files using `generate.sh`.
 
 ```
 $ ./generate.sh
 ```
 
-In order to make to expose the tool to users,
-edit the `default.nix` file and expose it.
-In case tool depends on `elmi-to-json` binary (usually installed)
-via npm with `binwrap` apply the patch (see `elm-test` as an example).
+In order to make the tool exposed to the end user
+edit the `default.nix` file and add it to the set it defines.
+Some tools depends on `elmi-to-json` binary (usually installed
+via npm with `binwrap`).
+`binwrap` installation is not compatible with nix out of the box.
+See `elm-test` as an example of how such package can be patched
+by expressions provided as part of this repository.
 
 ## Get More!
 
