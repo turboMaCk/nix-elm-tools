@@ -100,7 +100,6 @@ nixos configuration remote install:
 
 ```nix
 { pkgs, ... }:
-
 let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
