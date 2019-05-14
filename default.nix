@@ -1,7 +1,8 @@
-{ pkgs ? import <nixpkgs> {}}:
+{ pkgs ? import <nixpkgs> {}, compileHS ? false }:
 let
   elmi-to-json =
-    (import ./elmi-to-json.nix { inherit pkgs; }).blob;
+    let set = import ./elmi-to-json.nix { inherit pkgs; };
+    in if compileHS then set.fromSource else set.blob;
 
   elmNodePackages =
     import ./composition.nix {
