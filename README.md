@@ -131,7 +131,7 @@ you can set `compileHS` option to `true`.
 nix-env from command line:
 
 ```shell
-$ nix-build nix-build -A elm-test --arg compileHS true
+$ nix-build -A elm-test --arg compileHS true
 ```
 
 or in with remote install via nix
