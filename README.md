@@ -125,7 +125,7 @@ in {
 By default instead of compiling [elmi-to-json](https://github.com/stoeffel/elmi-to-json) from source
 binary blob is downloaded from [github releases](https://github.com/stoeffel/elmi-to-json/releases).
 
-If you prefer to compile binary during the build from source,
+If you prefer to compile everything from source,
 you can set `compileHS` option to `true`.
 
 nix-env from command line:
@@ -134,7 +134,7 @@ nix-env from command line:
 $ nix-build -A elm-test --arg compileHS true
 ```
 
-or in with remote install via nix
+or with remote install via nix
 
 ```nix
 let
