@@ -122,8 +122,8 @@ in {
 
 ## Compiling Haskell
 
-By default instead of compiling [elmi-to-json]() from source
-binary blob is downloaded from [github release]().
+By default instead of compiling [elmi-to-json](https://github.com/stoeffel/elmi-to-json) from source
+binary blob is downloaded from [github releases](https://github.com/stoeffel/elmi-to-json/releases).
 
 If you prefer to compile binary during the build from source,
 you can set `compileHS` option to `true`.
