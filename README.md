@@ -149,7 +149,7 @@ import (pkgs.fetchFromGitHub {
 ```
 
 
-## Developement
+## Development
 
 All contributions are welcome. If you want to add a tool available via npm,
 add it to `packages.json` and generete new nix files using `generate.sh`.
