@@ -100,7 +100,6 @@ nixos configuration remote install:
 
 ```nix
 { pkgs, ... }:
-
 let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
@@ -109,19 +108,48 @@ let
     sha256 = "1gzcvzpgcqb3bx162fxy299h8arkjhmv8gafl5ja6lnq9l5iqbzv";
   }) { inherit pkgs; };
 in {
-    environment.systemPackages = with pkgs.elmPackages; [
-        elm
-        elm-format
-        pkgs.elm2nix
-        elmTools.elm-test
-        elmTools.elm-verify-examples
-        elmTools.elm-analyse
-        elmTools.elm-doc-preview
-    ];
+  environment.systemPackages = with pkgs.elmPackages; [
+    elm
+    elm-format
+    pkgs.elm2nix
+    elmTools.elm-test
+    elmTools.elm-verify-examples
+    elmTools.elm-analyse
+    elmTools.elm-doc-preview
+  ];
 }
 ```
 
-## Developement
+## Compiling Haskell
+
+By default instead of compiling [elmi-to-json]() from source
+binary blob is downloaded from [github release]().
+
+If you prefer to compile binary during the build from source,
+you can set `compileHS` option to `true`.
+
+nix-env from command line:
+
+```shell
+$ nix-build nix-build -A elm-test --arg compileHS true
+```
+
+or in with remote install via nix
+
+```nix
+let
+  pkgs = import <nixpkgs> {};
+in
+import (pkgs.fetchFromGitHub {
+  owner = "turboMaCk";
+  repo = "nix-elm-tools";
+  rev = "b2c9d05796c85eeaf2424fc3ce7da4a16bb5ae48";
+  sha256 = "1gzcvzpgcqb3bx162fxy299h8arkjhmv8gafl5ja6lnq9l5iqbzv";
+}) { inherit pkgs; compileHS = true; }
+```
+
+
+## Development
 
 All contributions are welcome. If you want to add a tool available via npm,
 add it to `packages.json` and generete new nix files using `generate.sh`.
