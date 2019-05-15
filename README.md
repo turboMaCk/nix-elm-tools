@@ -170,4 +170,4 @@ by expressions provided as part of this repository.
 
 If you're nix user you should definitely try awesome [elm2nix](https://github.com/hercules-ci/elm2nix).
 Big shouts to [@domenkozar](https://github.com/hercules-ci/elm2nix/commits?author=domenkozar)
-and the whole [herokus-ci](https://hercules-ci.com/) for their work.
+and the whole [hercules-ci](https://hercules-ci.com/) for their work.
