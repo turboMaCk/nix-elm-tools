@@ -2,6 +2,7 @@
 
 let
   version = "0.19.3";
+  nodePackageName = "elmi-to-json";
 
   cabalPkg =
     { mkDerivation, aeson, async, base, binary, bytestring, containers
@@ -9,6 +10,7 @@ let
     , stdenv, text
     }:
     mkDerivation {
+      inherit nodePackageName;
       pname = "elmi-to-json";
       version = version;
       src = pkgs.fetchFromGitHub {
@@ -34,6 +36,7 @@ let
 
   blob = with pkgs;
     stdenv.mkDerivation {
+      inherit nodePackageName;
       name = "elmi-to-json-easy-${version}";
       inherit version;
 

@@ -1,4 +1,4 @@
-{ elmi-to-json, writeScriptBin, stdenv }:
+{ writeScriptBin, stdenv, lib }:
 let
   # Patching binwrap by NoOp script
   binwrap = writeScriptBin "binwrap" ''
@@ -11,12 +11,18 @@ let
     echo "binwrap-install called: Doing nothing"
   '';
 in
+targets:
 pkg:
 pkg.override {
   buildInputs = [ binwrap binwrap-install ];
 
-  # Manually install elmi-to-json binary
+  # Manually install targets
+  # by symlinking binaries into `node_modules`
   postInstall = ''
-    ln -sf ${elmi-to-json}/bin/elmi-to-json node_modules/elmi-to-json/bin/elmi-to-json
+    ${lib.concatStrings (map (module: ''
+        echo "linking ${module.nodePackageName}"
+        ln -sf ${module}/bin/${module.nodePackageName} \
+            node_modules/${module.nodePackageName}/bin/${module.nodePackageName}
+    '') targets)}
   '';
 }
