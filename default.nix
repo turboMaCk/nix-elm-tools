@@ -12,14 +12,13 @@ let
     };
 
   patchBinwrap =
-    import ./patch-bin-wrap.nix {
-      inherit elmi-to-json;
-      inherit(pkgs) writeScriptBin stdenv;
+    import ./patch-binwrap.nix {
+      inherit (pkgs) lib writeScriptBin stdenv;
     };
 in
 with elmNodePackages;
 {
-  elm-test = elm-test.override patchBinwrap;
-  elm-verify-examples = elm-verify-examples.override patchBinwrap;
-  inherit elm-analyse elm-doc-preview;
+  elm-test = patchBinwrap [elmi-to-json] elm-test;
+  elm-verify-examples = patchBinwrap [elmi-to-json] elm-verify-examples;
+  inherit elm-analyse elm-doc-preview elmi-to-json;
 }

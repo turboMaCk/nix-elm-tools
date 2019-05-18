@@ -10,11 +10,10 @@ let
     }:
     mkDerivation {
       pname = "elmi-to-json";
-      version = "0.1.0.0";
+      version = version;
       src = pkgs.fetchFromGitHub {
         owner = "stoeffel";
         repo = "elmi-to-json";
-        # using tag for consistency with blob fetch
         rev = version;
         sha256 = "0s32929q1xfqnrh5lv1xjhw5wmjdcm4c19hkdg8835px4kir9899";
       };
@@ -35,7 +34,7 @@ let
 
   blob = with pkgs;
     stdenv.mkDerivation {
-      name = "elmi-to-json-easy-${version}";
+      name = "elmi-to-json-${version}";
       inherit version;
 
       src =
