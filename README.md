@@ -72,8 +72,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "49b79886a43f816f53f3325dba05c40f28b5233d";
-    sha256 = "03j352q3s8d4x79570vgiwc4sjlyj5vi0nnvi15z4x0haga3410r";
+    rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
+    sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
   }) { inherit pkgs; };
 in
 {
@@ -89,8 +89,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "49b79886a43f816f53f3325dba05c40f28b5233d";
-    sha256 = "03j352q3s8d4x79570vgiwc4sjlyj5vi0nnvi15z4x0haga3410r";
+    rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
+    sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
   }) { inherit pkgs; };
 in
   with pkgs;
@@ -107,8 +107,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "49b79886a43f816f53f3325dba05c40f28b5233d";
-    sha256 = "03j352q3s8d4x79570vgiwc4sjlyj5vi0nnvi15z4x0haga3410r";
+    rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
+    sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
   }) { inherit pkgs; };
 in {
   environment.systemPackages = with pkgs.elmPackages; [
@@ -146,8 +146,8 @@ in
 import (pkgs.fetchFromGitHub {
   owner = "turboMaCk";
   repo = "nix-elm-tools";
-  rev = "49b79886a43f816f53f3325dba05c40f28b5233d";
-  sha256 = "03j352q3s8d4x79570vgiwc4sjlyj5vi0nnvi15z4x0haga3410r";
+  rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
+  sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
 }) { inherit pkgs; compileHS = true; }
 ```
 
