@@ -19,7 +19,7 @@ let
 in
 with elmNodePackages;
 {
-  elm-test = elm-test.override patchBinwrap;
-  elm-verify-examples = elm-verify-examples.override patchBinwrap;
+  elm-test = patchBinwrap elm-test;
+  elm-verify-examples = patchBinwrap elm-verify-examples;
   inherit elm-analyse elm-doc-preview;
 }

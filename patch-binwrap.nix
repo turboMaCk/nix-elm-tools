@@ -11,7 +11,8 @@ let
     echo "binwrap-install called: Doing nothing"
   '';
 in
-{
+pkg:
+pkg.override {
   buildInputs = [ binwrap binwrap-install ];
 
   # Manually install elmi-to-json binary
