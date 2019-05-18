@@ -12,7 +12,7 @@ let
     };
 
   patchBinwrap =
-    import ./patch-bin-wrap.nix {
+    import ./patch-binwrap.nix {
       inherit elmi-to-json;
       inherit(pkgs) writeScriptBin stdenv;
     };

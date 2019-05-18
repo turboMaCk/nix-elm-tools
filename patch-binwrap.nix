@@ -16,6 +16,6 @@ in
 
   # Manually install elmi-to-json binary
   postInstall = ''
-    cp ${elmi-to-json}/bin/elmi-to-json node_modules/elmi-to-json/bin/elmi-to-json
+    ln -sf ${elmi-to-json}/bin/elmi-to-json node_modules/elmi-to-json/bin/elmi-to-json
   '';
 }
