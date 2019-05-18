@@ -125,16 +125,15 @@ in {
 
 ## Compiling Haskell
 
-By default instead of compiling [elmi-to-json](https://github.com/stoeffel/elmi-to-json) from source
-binary blob is downloaded from [github releases](https://github.com/stoeffel/elmi-to-json/releases).
-
-If you prefer to compile everything from source,
-you can set `compileHS` option to `true`.
+Haskell dependencies are by default compiled from source.
+If you want to avoid compiling Haskell there is an optional `compileHS` argument.
+When this is set to `false` statically linked binaries are downloaded from
+[github releases](https://github.com/stoeffel/elmi-to-json/releases).
 
 nix-env from command line:
 
 ```shell
-$ nix-build -A elm-test --arg compileHS true
+$ nix-build -A elm-test --arg compileHS false
 ```
 
 or with remote install via nix
@@ -148,7 +147,7 @@ import (pkgs.fetchFromGitHub {
   repo = "nix-elm-tools";
   rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
   sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
-}) { inherit pkgs; compileHS = true; }
+}) { inherit pkgs; compileHS = false; }
 ```
 
 

@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {}, compileHS ? false }:
+{ pkgs ? import <nixpkgs> {}, compileHS ? true }:
 let
   elmi-to-json =
     let set = import ./elmi-to-json.nix { inherit pkgs; };
