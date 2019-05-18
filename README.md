@@ -18,9 +18,11 @@ Generally there are two ways to do so:
 1. Remove all the hacks in upstream packages to make them nix compatible out of the box.
 2. Implement custom nix specific builds for elm tooling with nix specific patches.
 
-Given that nix users makes only for a tiny fraction elm community I believe
-it would be naive to try to enforce compatibility directly in upstream packages
-and therefore this project uses 2nd approach to provide elm lang tooling to nix community.
+I've decided to start with 2nd. This project thus introduces expressions which
+allow fully working builds using nix including all the patches.
+As a next steps I'm going to identify [peice which seems to make sense to upstream](https://github.com/stoeffel/elmi-to-json/pull/28)
+in order to simplify the build. My goal is to endup with easy to maitain builds which
+can be merged into the [nixpkgs](https://github.com/nixOS/nixpkgs/).
 
 ## Rules
 
