@@ -20,5 +20,5 @@ with elmNodePackages;
 {
   elm-test = patchBinwrap [elmi-to-json] elm-test;
   elm-verify-examples = patchBinwrap [elmi-to-json] elm-verify-examples;
-  inherit elm-analyse elm-doc-preview;
+  inherit elm-analyse elm-doc-preview elmi-to-json;
 }

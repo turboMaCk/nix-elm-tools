@@ -41,6 +41,7 @@ Tooling provided so far:
 - [elm-verify-examples](https://github.com/stoeffel/elm-verify-examples)
 - [elm-analyse](https://github.com/stil4m/elm-analyse)
 - [elm-doc-preview](https://github.com/dmy/elm-doc-preview)
+- [elmi-to-json](https://github.com/stoeffel/elmi-to-json)
 
 If you miss your favorite tool, feel free to open an issue or submit a PR.
 
