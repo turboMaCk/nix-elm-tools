@@ -13,7 +13,7 @@ let
 
   patchBinwrap =
     import ./patch-binwrap.nix {
-      inherit(pkgs) lib writeScriptBin stdenv;
+      inherit (pkgs) lib writeScriptBin stdenv;
     };
 in
 with elmNodePackages;
