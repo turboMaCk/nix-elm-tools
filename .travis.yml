@@ -13,4 +13,4 @@ script:
   - pushd tests; elm-verify-examples; popd
   - pushd tests; elm-analyse; popd
   - elm-doc-preview --version
-  - nix-build -A elm-test --arg compileHS true
+  - nix-build -A elm-test --arg compileHS false
