@@ -8,48 +8,48 @@ operating system.
 
 ## Motivation
 
-Getting all the existing community tooling for Elm language running with nix is painful.
+Getting all the existing community tooling for the Elm language running with Nix is painful.
 This is mostly due to the usage of [binary wrappers](https://github.com/avh4/binwrap) to make
-haskell binaries and node.js work together. For instance `nodePackages.elm-test`
-provided by [nixpkgs](https://github.com/NixOS/nixpkgs) as of today
-isn't working. I believe situation can be improved though!
+Haskell binaries and Node.js work together. For instance, `nodePackages.elm-test`
+provided by [Nixpkgs](https://github.com/OS/nixpkgs) as of today
+isn't working. I believe the situation can be improved though!
 Generally there are two ways to do so:
 
-1. Remove all the hacks in upstream packages to make them nix compatible out of the box.
-2. Implement custom nix specific builds for elm tooling with nix specific patches.
+1. Remove all the hacks in upstream packages to make them Nix-compatible out of the box.
+2. Implement custom Nix-specific builds for Elm tooling with Nix-specific patches.
 
 I've decided to start with 2nd. This project thus introduces expressions which
-allow fully working builds using nix including all the patches.
-As a next steps I'm going to identify [peice which seems to make sense to upstream](https://github.com/stoeffel/elmi-to-json/pull/28)
-in order to simplify the build. My goal is to endup with easy to maitain builds which
-can be merged into the [nixpkgs](https://github.com/nixOS/nixpkgs/).
+allow fully working builds using Nix, including all the patches.
+As a next step I'm going to identify [pieces which seem to make sense to upstream](https://github.com/stoeffel/elmi-to-json/pull/28)
+in order to simplify the build. My goal is to end up with easy to maintain builds which
+can be merged into [Nixpkgs](https://github.com/nixOS/nixpkgs/).
 
 ## Rules
 
 These are the rules followed:
 
 1. [x] Builds on NixOS
-2. [x] Builds are reasonably fast (eg. we avoid usage of stack2nix and large rebuilds of Haskell packages)
+2. [x] Builds are reasonably fast (eg. we avoid usage of [`stack2nix`](https://github.com/input-output-hk/stack2nix) and large rebuilds of Haskell packages)
 3. [x] Easy to pull from remote
-4. [x] Nixpkgs like conventions
+4. [x] Nixpkgs-like conventions
 5. [x] Linux and MacOS portability
-6. [x] Utilizing existing nix tooling
+6. [x] Utilizing existing Nix tooling
 
 ## Components
 
 Tooling provided so far:
 
-- [elm-test](https://github.com/rtfeldman/node-test-runner)
-- [elm-verify-examples](https://github.com/stoeffel/elm-verify-examples)
-- [elm-analyse](https://github.com/stil4m/elm-analyse)
-- [elm-doc-preview](https://github.com/dmy/elm-doc-preview)
-- [elmi-to-json](https://github.com/stoeffel/elmi-to-json)
+- [`elm-test`](https://github.com/rtfeldman/node-test-runner)
+- [`elm-verify-examples`](https://github.com/stoeffel/elm-verify-examples)
+- [`elm-analyse`](https://github.com/stil4m/elm-analyse)
+- [`elm-doc-preview`](https://github.com/dmy/elm-doc-preview)
+- [`elmi-to-json`](https://github.com/stoeffel/elmi-to-json)
 
 If you miss your favorite tool, feel free to open an issue or submit a PR.
 
 ## Usage
 
-nix-env from source:
+`nix-env` from source:
 
 ```shell
 # clone project
@@ -81,7 +81,7 @@ in
 }
 ```
 
-nix-shell remote install:
+`nix-shell` remote install:
 
 ```nix
 { pkgs ? import <nixpkgs> {} }:
@@ -99,7 +99,7 @@ in
   }
 ```
 
-nixos configuration remote install:
+NixOS configuration remote install:
 
 ```nix
 { pkgs, ... }:
@@ -125,19 +125,19 @@ in {
 
 ## Compiling Haskell
 
-By default instead of compiling [elmi-to-json](https://github.com/stoeffel/elmi-to-json) from source
-binary blob is downloaded from [github releases](https://github.com/stoeffel/elmi-to-json/releases).
+By default, instead of compiling [elmi-to-json](https://github.com/stoeffel/elmi-to-json) from source,
+the binary blob is downloaded from [github releases](https://github.com/stoeffel/elmi-to-json/releases).
 
 If you prefer to compile everything from source,
 you can set `compileHS` option to `true`.
 
-nix-env from command line:
+`nix-env` from command line:
 
 ```shell
 $ nix-build -A elm-test --arg compileHS true
 ```
 
-or with remote install via nix
+or with remote install via Nix
 
 ```nix
 let
@@ -155,22 +155,22 @@ import (pkgs.fetchFromGitHub {
 ## Development
 
 All contributions are welcome. If you want to add a tool available via npm,
-add it to `packages.json` and generete new nix files using `generate.sh`.
+add it to `packages.json`, and generete new nix files using `generate.sh`.
 
 ```
 $ ./generate.sh
 ```
 
-In order to make the tool exposed to the end user
-edit the `default.nix` file and add it to the set it defines.
-Some tools depends on `elmi-to-json` binary (usually installed
+In order to make the tool exposed to the end user,
+edit the `default.nix` file, and add it to the set it defines.
+Some tools depend on `elmi-to-json` binary (usually installed
 via npm with `binwrap`).
-`binwrap` installation is not compatible with nix out of the box.
-See `elm-test` as an example of how such package can be patched
+`binwrap` installation is not compatible with Nix out of the box.
+See [`elm-test`](https://github.com/rtfeldman/node-test-runner) as an example of how such a package can be patched
 by expressions provided as part of this repository.
 
 ## Get More!
 
-If you're nix user you should definitely try awesome [elm2nix](https://github.com/hercules-ci/elm2nix).
+If you're a Nix user, you should definitely try the awesome [`elm2nix`](https://github.com/hercules-ci/elm2nix).
 Big shouts to [@domenkozar](https://github.com/hercules-ci/elm2nix/commits?author=domenkozar)
 and the whole [hercules-ci](https://hercules-ci.com/) for their work.
