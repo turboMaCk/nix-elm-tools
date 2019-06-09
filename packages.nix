@@ -4650,10 +4650,10 @@ in
   "elm-analyse-0.16.3" = nodeEnv.buildNodePackage {
     name = "elm-analyse";
     packageName = "elm-analyse";
-    version = "0.16.4";
+    version = "0.16.3";
     src = fetchurl {
-      url = "https://registry.npmjs.org/elm-analyse/-/elm-analyse-0.16.4.tgz";
-      sha512 = "6F6JfcOfbRgTBJj7MF+CqGcatCep8ppZtfIAri+fpC76MsSohJAOfLgmbmd4BWOXcTiWCpvQaaFwUutm7cOlpA==";
+      url = "https://registry.npmjs.org/elm-analyse/-/elm-analyse-0.16.3.tgz";
+      sha512 = "JFlGT0d6v3EPk1UnB5xb6VYWrKzwGD76wBwr2R0xwA3T6Rju7zEnzfs8LiBo+b3gSH5cmRDfnK9BLRFiosWEfQ==";
     };
     dependencies = [
       sources."accepts-1.3.7"
