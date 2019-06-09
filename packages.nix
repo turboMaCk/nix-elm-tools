@@ -4647,7 +4647,7 @@ in
     production = true;
     bypassCache = true;
   };
-  elm-analyse = nodeEnv.buildNodePackage {
+  "elm-analyse-0.16.3" = nodeEnv.buildNodePackage {
     name = "elm-analyse";
     packageName = "elm-analyse";
     version = "0.16.4";
