@@ -44,6 +44,7 @@ Tooling provided so far:
 - [`elm-analyse`](https://github.com/stil4m/elm-analyse)
 - [`elm-doc-preview`](https://github.com/dmy/elm-doc-preview)
 - [`elmi-to-json`](https://github.com/stoeffel/elmi-to-json)
+- [`elm-upgrade`](https://github.com/avh4/elm-upgrade)
 
 If you miss your favorite tool, feel free to open an issue or submit a PR.
 
@@ -72,8 +73,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
-    sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
+    rev = "41b5045587f84d993a7ee55972cfd61152cafc48";
+    sha256 = "1ns02xxj3zijf6myaxk8azgs8v69gpc2b0v080m2xjf1pvv6hd75";
   }) { inherit pkgs; };
 in
 {
@@ -89,8 +90,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
-    sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
+    rev = "41b5045587f84d993a7ee55972cfd61152cafc48";
+    sha256 = "1ns02xxj3zijf6myaxk8azgs8v69gpc2b0v080m2xjf1pvv6hd75";
   }) { inherit pkgs; };
 in
   with pkgs;
@@ -107,8 +108,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
-    sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
+    rev = "41b5045587f84d993a7ee55972cfd61152cafc48";
+    sha256 = "1ns02xxj3zijf6myaxk8azgs8v69gpc2b0v080m2xjf1pvv6hd75";
   }) { inherit pkgs; };
 in {
   environment.systemPackages = with pkgs.elmPackages; [
@@ -146,8 +147,8 @@ in
 import (pkgs.fetchFromGitHub {
   owner = "turboMaCk";
   repo = "nix-elm-tools";
-  rev = "8168561d341ad5bafd5573d1e2a904d4d1fff7b2";
-  sha256 = "0svag008jis34knyj7a59lmdhnz2b7h8mqh1arrkbl5yhpxg7n65";
+  rev = "41b5045587f84d993a7ee55972cfd61152cafc48";
+  sha256 = "1ns02xxj3zijf6myaxk8azgs8v69gpc2b0v080m2xjf1pvv6hd75";
 }) { inherit pkgs; compileHS = true; }
 ```
 
