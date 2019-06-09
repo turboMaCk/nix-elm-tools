@@ -274,13 +274,13 @@ let
         sha512 = "kILc2+zMfFEv66/NLfO2GIpmWRPE8hL68fv+o5A94OlN9AIIG4zernpgn9bpPAImb5t4QwFxnqAGSyP1+tGKrA==";
       };
     };
-    "bluebird-3.5.4" = {
+    "bluebird-3.5.5" = {
       name = "bluebird";
       packageName = "bluebird";
-      version = "3.5.4";
+      version = "3.5.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/bluebird/-/bluebird-3.5.4.tgz";
-        sha512 = "FG+nFEZChJrbQ9tIccIfZJBz3J7mLrAhxakAbnrJWn8d7aKOC+LWifa0G+p4ZqKp4y13T7juYvdhq9NzKdsrjw==";
+        url = "https://registry.npmjs.org/bluebird/-/bluebird-3.5.5.tgz";
+        sha512 = "5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==";
       };
     };
     "body-parser-1.18.2" = {
@@ -643,13 +643,13 @@ let
         sha1 = "676f6eb3c39997c2ee1ac3a924fd6124748f578d";
       };
     };
-    "core-js-2.6.5" = {
+    "core-js-2.6.9" = {
       name = "core-js";
       packageName = "core-js";
-      version = "2.6.5";
+      version = "2.6.9";
       src = fetchurl {
-        url = "https://registry.npmjs.org/core-js/-/core-js-2.6.5.tgz";
-        sha512 = "klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A==";
+        url = "https://registry.npmjs.org/core-js/-/core-js-2.6.9.tgz";
+        sha512 = "HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==";
       };
     };
     "core-util-is-1.0.2" = {
@@ -949,13 +949,13 @@ let
         sha1 = "6af8a502350db3246ecc4becf6b5a34d22f7ed53";
       };
     };
-    "express-4.17.0" = {
+    "express-4.17.1" = {
       name = "express";
       packageName = "express";
-      version = "4.17.0";
+      version = "4.17.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/express/-/express-4.17.0.tgz";
-        sha512 = "1Z7/t3Z5ZnBG252gKUPyItc4xdeaA0X934ca2ewckAsVsw9EG71i++ZHZPYnus8g/s5Bty8IMpSVEuRkmwwPRQ==";
+        url = "https://registry.npmjs.org/express/-/express-4.17.1.tgz";
+        sha512 = "mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==";
       };
     };
     "express-ws-2.0.0" = {
@@ -2722,13 +2722,13 @@ let
         sha1 = "f052a28da70e618917ef0a8ac34c1ae5a68286b3";
       };
     };
-    "psl-1.1.31" = {
+    "psl-1.1.32" = {
       name = "psl";
       packageName = "psl";
-      version = "1.1.31";
+      version = "1.1.32";
       src = fetchurl {
-        url = "https://registry.npmjs.org/psl/-/psl-1.1.31.tgz";
-        sha512 = "/6pt4+C+T+wZUieKR620OpzN/LlnNKuWjy1iFLQ/UG35JqHlR/89MP1d96dUfkf6Dne3TuLQzOYEYshJ+Hx8mw==";
+        url = "https://registry.npmjs.org/psl/-/psl-1.1.32.tgz";
+        sha512 = "MHACAkHpihU/REGGPLj4sEfc/XKW2bheigvHO1dUqjaKigMp1C8+WLQYRGgeKFMsw5PMfegZcaN8IDXK/cD0+g==";
       };
     };
     "pump-3.0.0" = {
@@ -3010,13 +3010,13 @@ let
         sha512 = "mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==";
       };
     };
-    "rsvp-4.8.4" = {
+    "rsvp-4.8.5" = {
       name = "rsvp";
       packageName = "rsvp";
-      version = "4.8.4";
+      version = "4.8.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/rsvp/-/rsvp-4.8.4.tgz";
-        sha512 = "6FomvYPfs+Jy9TfXmBpBuMWNH94SgCsZmJKcanySzgNNP6LjWxBvyLTa9KaMfDDM5oxRfrKDB0r/qeRsLwnBfA==";
+        url = "https://registry.npmjs.org/rsvp/-/rsvp-4.8.5.tgz";
+        sha512 = "nfMOlASu9OnRJo1mbEk2cz0D56a1MBNrJ7orjRZQG10XDyuvwksKbuXNp6qa+kbn839HwjwhBzhFmdsaEAfauA==";
       };
     };
     "safe-buffer-5.1.1" = {
@@ -3442,13 +3442,13 @@ let
         sha512 = "tPYCsLGWTDRlET7cen2iAwbmO+lSwfIdKoLkUPC41t/54UhqbzpwXL4RhODu5fQnmZdQZlEFKeD0W/BysU5WEg==";
       };
     };
-    "tar-4.4.8" = {
+    "tar-4.4.10" = {
       name = "tar";
       packageName = "tar";
-      version = "4.4.8";
+      version = "4.4.10";
       src = fetchurl {
-        url = "https://registry.npmjs.org/tar/-/tar-4.4.8.tgz";
-        sha512 = "LzHF64s5chPQQS0IYBn9IN5h3i98c12bo4NCO7e0sGM2llXQ3p2FGC5sdENN4cTW48O915Sh+x+EXx7XW96xYQ==";
+        url = "https://registry.npmjs.org/tar/-/tar-4.4.10.tgz";
+        sha512 = "g2SVs5QIxvo6OLp0GudTqEf05maawKUxXru104iaayWA09551tFCTI8f1Asb4lPfkBr91k07iL4c11XO3/b0tA==";
       };
     };
     "temp-0.8.3" = {
@@ -3987,7 +3987,7 @@ in
       sources."binary-0.3.0"
       sources."binary-extensions-1.13.1"
       sources."binwrap-0.2.1"
-      sources."bluebird-3.5.4"
+      sources."bluebird-3.5.5"
       sources."brace-expansion-1.1.11"
       (sources."braces-2.3.2" // {
         dependencies = [
@@ -4194,7 +4194,7 @@ in
       sources."posix-character-classes-0.1.1"
       sources."process-nextick-args-2.0.0"
       sources."pseudomap-1.0.2"
-      sources."psl-1.1.31"
+      sources."psl-1.1.32"
       sources."punycode-2.1.1"
       sources."qs-6.5.2"
       sources."readable-stream-2.3.6"
@@ -4277,7 +4277,7 @@ in
       sources."stealthy-require-1.1.1"
       sources."string_decoder-1.1.1"
       sources."supports-color-4.2.0"
-      (sources."tar-4.4.8" // {
+      (sources."tar-4.4.10" // {
         dependencies = [
           sources."yallist-3.0.3"
         ];
@@ -4381,7 +4381,7 @@ in
       sources."binary-0.3.0"
       sources."binary-extensions-1.13.1"
       sources."binwrap-0.2.1"
-      sources."bluebird-3.5.4"
+      sources."bluebird-3.5.5"
       sources."brace-expansion-1.1.11"
       (sources."braces-2.3.2" // {
         dependencies = [
@@ -4628,7 +4628,7 @@ in
       sources."posix-character-classes-0.1.1"
       sources."process-nextick-args-2.0.0"
       sources."pseudomap-1.0.2"
-      sources."psl-1.1.31"
+      sources."psl-1.1.32"
       sources."punycode-2.1.1"
       sources."qs-6.5.2"
       sources."readable-stream-2.3.6"
@@ -4724,7 +4724,7 @@ in
       sources."strip-ansi-4.0.0"
       sources."strip-eof-1.0.0"
       sources."supports-color-5.5.0"
-      (sources."tar-4.4.8" // {
+      (sources."tar-4.4.10" // {
         dependencies = [
           sources."yallist-3.0.3"
         ];
@@ -4796,169 +4796,6 @@ in
     meta = {
       description = "Verify examples in Elm doc-comments";
       license = "BSD-3-Clause";
-    };
-    production = true;
-    bypassCache = true;
-  };
-  elm-analyse = nodeEnv.buildNodePackage {
-    name = "elm-analyse";
-    packageName = "elm-analyse";
-    version = "0.16.4";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/elm-analyse/-/elm-analyse-0.16.4.tgz";
-      sha512 = "6F6JfcOfbRgTBJj7MF+CqGcatCep8ppZtfIAri+fpC76MsSohJAOfLgmbmd4BWOXcTiWCpvQaaFwUutm7cOlpA==";
-    };
-    dependencies = [
-      sources."accepts-1.3.7"
-      sources."ajv-6.10.0"
-      sources."array-flatten-1.1.1"
-      sources."asn1-0.2.4"
-      sources."assert-plus-1.0.0"
-      sources."async-limiter-1.0.0"
-      sources."asynckit-0.4.0"
-      sources."aws-sign2-0.7.0"
-      sources."aws4-1.8.0"
-      sources."babel-runtime-6.18.0"
-      sources."bcrypt-pbkdf-1.0.2"
-      sources."body-parser-1.18.2"
-      sources."bytes-3.0.0"
-      sources."caseless-0.12.0"
-      sources."combined-stream-1.0.8"
-      sources."concat-stream-1.5.2"
-      sources."content-disposition-0.5.2"
-      sources."content-type-1.0.4"
-      sources."cookie-0.3.1"
-      sources."cookie-signature-1.0.6"
-      sources."core-js-2.6.5"
-      sources."core-util-is-1.0.2"
-      sources."dashdash-1.14.1"
-      sources."debug-2.6.9"
-      sources."delayed-stream-1.0.0"
-      sources."depd-1.1.2"
-      sources."destroy-1.0.4"
-      sources."ecc-jsbn-0.1.2"
-      sources."ee-first-1.1.1"
-      sources."encodeurl-1.0.2"
-      sources."escape-html-1.0.3"
-      sources."etag-1.8.1"
-      sources."express-4.16.3"
-      (sources."express-ws-2.0.0" // {
-        dependencies = [
-          sources."ws-1.1.5"
-        ];
-      })
-      sources."extend-3.0.2"
-      sources."extsprintf-1.3.0"
-      sources."fast-deep-equal-2.0.1"
-      sources."fast-json-stable-stringify-2.0.0"
-      sources."finalhandler-1.1.1"
-      sources."find-0.2.7"
-      sources."forever-agent-0.6.1"
-      sources."form-data-2.3.3"
-      sources."forwarded-0.1.2"
-      sources."fresh-0.5.2"
-      sources."fs-extra-2.0.0"
-      sources."getpass-0.1.7"
-      sources."graceful-fs-4.1.15"
-      sources."har-schema-2.0.0"
-      sources."har-validator-5.1.3"
-      sources."http-errors-1.6.3"
-      sources."http-signature-1.2.0"
-      sources."iconv-lite-0.4.19"
-      sources."inherits-2.0.3"
-      sources."ipaddr.js-1.9.0"
-      sources."is-stream-1.1.0"
-      sources."is-typedarray-1.0.0"
-      sources."is-wsl-1.1.0"
-      sources."isarray-1.0.0"
-      sources."isstream-0.1.2"
-      sources."jsbn-0.1.1"
-      sources."json-schema-0.2.3"
-      sources."json-schema-traverse-0.4.1"
-      sources."json-stringify-safe-5.0.1"
-      sources."jsonfile-2.4.0"
-      sources."jsprim-1.4.1"
-      sources."lodash-4.17.11"
-      sources."media-typer-0.3.0"
-      sources."merge-descriptors-1.0.1"
-      sources."methods-1.1.2"
-      sources."mime-1.4.1"
-      sources."mime-db-1.40.0"
-      sources."mime-types-2.1.24"
-      sources."minimist-1.2.0"
-      sources."ms-2.0.0"
-      sources."negotiator-0.6.2"
-      sources."node-watch-0.5.5"
-      sources."oauth-sign-0.9.0"
-      sources."on-finished-2.3.0"
-      sources."opn-5.4.0"
-      sources."options-0.0.6"
-      sources."os-homedir-1.0.2"
-      sources."os-tmpdir-1.0.2"
-      sources."parseurl-1.3.3"
-      sources."path-to-regexp-0.1.7"
-      sources."performance-now-2.1.0"
-      sources."process-nextick-args-1.0.7"
-      sources."proxy-addr-2.0.5"
-      sources."psl-1.1.31"
-      sources."punycode-2.1.1"
-      sources."qs-6.5.1"
-      sources."range-parser-1.2.1"
-      (sources."raw-body-2.3.2" // {
-        dependencies = [
-          sources."depd-1.1.1"
-          sources."http-errors-1.6.2"
-          sources."setprototypeof-1.0.3"
-        ];
-      })
-      sources."readable-stream-2.0.6"
-      sources."regenerator-runtime-0.9.6"
-      (sources."request-2.88.0" // {
-        dependencies = [
-          sources."qs-6.5.2"
-          sources."safe-buffer-5.1.2"
-        ];
-      })
-      sources."safe-buffer-5.1.1"
-      sources."safer-buffer-2.1.2"
-      sources."send-0.16.2"
-      sources."serve-static-1.13.2"
-      sources."setprototypeof-1.1.0"
-      sources."sshpk-1.16.1"
-      sources."statuses-1.4.0"
-      sources."string_decoder-0.10.31"
-      sources."sums-0.2.4"
-      sources."through2-2.0.1"
-      sources."tmp-0.0.31"
-      (sources."tough-cookie-2.4.3" // {
-        dependencies = [
-          sources."punycode-1.4.1"
-        ];
-      })
-      sources."traverse-chain-0.1.0"
-      sources."tunnel-agent-0.6.0"
-      sources."tweetnacl-0.14.5"
-      sources."type-is-1.6.18"
-      sources."typedarray-0.0.6"
-      sources."ultron-1.0.2"
-      sources."unpipe-1.0.0"
-      sources."uri-js-4.2.2"
-      sources."util-deprecate-1.0.2"
-      sources."utils-merge-1.0.1"
-      sources."uuid-3.3.2"
-      sources."vary-1.1.2"
-      sources."verror-1.10.0"
-      (sources."ws-3.3.1" // {
-        dependencies = [
-          sources."ultron-1.1.1"
-        ];
-      })
-      sources."xtend-4.0.1"
-    ];
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "A tool that allows you analyse your Elm code and identifies deficiencies and best practices.";
-      license = "MIT";
     };
     production = true;
     bypassCache = true;
@@ -5074,7 +4911,7 @@ in
           sources."kind-of-5.1.0"
         ];
       })
-      sources."express-4.17.0"
+      sources."express-4.17.1"
       (sources."express-ws-4.0.0" // {
         dependencies = [
           sources."ws-5.2.2"
@@ -5221,7 +5058,7 @@ in
       sources."resolve-url-0.2.1"
       sources."responselike-1.0.2"
       sources."ret-0.1.15"
-      sources."rsvp-4.8.4"
+      sources."rsvp-4.8.5"
       sources."safe-buffer-5.1.2"
       sources."safe-regex-1.1.0"
       sources."safer-buffer-2.1.2"
@@ -5344,6 +5181,169 @@ in
       description = "Elm offline documentation previewer with hot reloading.";
       homepage = "https://github.com/dmy/elm-doc-preview#readme";
       license = "SEE LICENSE IN LICENSE.md";
+    };
+    production = true;
+    bypassCache = true;
+  };
+  "elm-analyse-0.16.3" = nodeEnv.buildNodePackage {
+    name = "elm-analyse";
+    packageName = "elm-analyse";
+    version = "0.16.3";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/elm-analyse/-/elm-analyse-0.16.3.tgz";
+      sha512 = "JFlGT0d6v3EPk1UnB5xb6VYWrKzwGD76wBwr2R0xwA3T6Rju7zEnzfs8LiBo+b3gSH5cmRDfnK9BLRFiosWEfQ==";
+    };
+    dependencies = [
+      sources."accepts-1.3.7"
+      sources."ajv-6.10.0"
+      sources."array-flatten-1.1.1"
+      sources."asn1-0.2.4"
+      sources."assert-plus-1.0.0"
+      sources."async-limiter-1.0.0"
+      sources."asynckit-0.4.0"
+      sources."aws-sign2-0.7.0"
+      sources."aws4-1.8.0"
+      sources."babel-runtime-6.18.0"
+      sources."bcrypt-pbkdf-1.0.2"
+      sources."body-parser-1.18.2"
+      sources."bytes-3.0.0"
+      sources."caseless-0.12.0"
+      sources."combined-stream-1.0.8"
+      sources."concat-stream-1.5.2"
+      sources."content-disposition-0.5.2"
+      sources."content-type-1.0.4"
+      sources."cookie-0.3.1"
+      sources."cookie-signature-1.0.6"
+      sources."core-js-2.6.9"
+      sources."core-util-is-1.0.2"
+      sources."dashdash-1.14.1"
+      sources."debug-2.6.9"
+      sources."delayed-stream-1.0.0"
+      sources."depd-1.1.2"
+      sources."destroy-1.0.4"
+      sources."ecc-jsbn-0.1.2"
+      sources."ee-first-1.1.1"
+      sources."encodeurl-1.0.2"
+      sources."escape-html-1.0.3"
+      sources."etag-1.8.1"
+      sources."express-4.16.3"
+      (sources."express-ws-2.0.0" // {
+        dependencies = [
+          sources."ws-1.1.5"
+        ];
+      })
+      sources."extend-3.0.2"
+      sources."extsprintf-1.3.0"
+      sources."fast-deep-equal-2.0.1"
+      sources."fast-json-stable-stringify-2.0.0"
+      sources."finalhandler-1.1.1"
+      sources."find-0.2.7"
+      sources."forever-agent-0.6.1"
+      sources."form-data-2.3.3"
+      sources."forwarded-0.1.2"
+      sources."fresh-0.5.2"
+      sources."fs-extra-2.0.0"
+      sources."getpass-0.1.7"
+      sources."graceful-fs-4.1.15"
+      sources."har-schema-2.0.0"
+      sources."har-validator-5.1.3"
+      sources."http-errors-1.6.3"
+      sources."http-signature-1.2.0"
+      sources."iconv-lite-0.4.19"
+      sources."inherits-2.0.3"
+      sources."ipaddr.js-1.9.0"
+      sources."is-stream-1.1.0"
+      sources."is-typedarray-1.0.0"
+      sources."is-wsl-1.1.0"
+      sources."isarray-1.0.0"
+      sources."isstream-0.1.2"
+      sources."jsbn-0.1.1"
+      sources."json-schema-0.2.3"
+      sources."json-schema-traverse-0.4.1"
+      sources."json-stringify-safe-5.0.1"
+      sources."jsonfile-2.4.0"
+      sources."jsprim-1.4.1"
+      sources."lodash-4.17.11"
+      sources."media-typer-0.3.0"
+      sources."merge-descriptors-1.0.1"
+      sources."methods-1.1.2"
+      sources."mime-1.4.1"
+      sources."mime-db-1.40.0"
+      sources."mime-types-2.1.24"
+      sources."minimist-1.2.0"
+      sources."ms-2.0.0"
+      sources."negotiator-0.6.2"
+      sources."node-watch-0.5.5"
+      sources."oauth-sign-0.9.0"
+      sources."on-finished-2.3.0"
+      sources."opn-5.4.0"
+      sources."options-0.0.6"
+      sources."os-homedir-1.0.2"
+      sources."os-tmpdir-1.0.2"
+      sources."parseurl-1.3.3"
+      sources."path-to-regexp-0.1.7"
+      sources."performance-now-2.1.0"
+      sources."process-nextick-args-1.0.7"
+      sources."proxy-addr-2.0.5"
+      sources."psl-1.1.32"
+      sources."punycode-2.1.1"
+      sources."qs-6.5.1"
+      sources."range-parser-1.2.1"
+      (sources."raw-body-2.3.2" // {
+        dependencies = [
+          sources."depd-1.1.1"
+          sources."http-errors-1.6.2"
+          sources."setprototypeof-1.0.3"
+        ];
+      })
+      sources."readable-stream-2.0.6"
+      sources."regenerator-runtime-0.9.6"
+      (sources."request-2.88.0" // {
+        dependencies = [
+          sources."qs-6.5.2"
+          sources."safe-buffer-5.1.2"
+        ];
+      })
+      sources."safe-buffer-5.1.1"
+      sources."safer-buffer-2.1.2"
+      sources."send-0.16.2"
+      sources."serve-static-1.13.2"
+      sources."setprototypeof-1.1.0"
+      sources."sshpk-1.16.1"
+      sources."statuses-1.4.0"
+      sources."string_decoder-0.10.31"
+      sources."sums-0.2.4"
+      sources."through2-2.0.1"
+      sources."tmp-0.0.31"
+      (sources."tough-cookie-2.4.3" // {
+        dependencies = [
+          sources."punycode-1.4.1"
+        ];
+      })
+      sources."traverse-chain-0.1.0"
+      sources."tunnel-agent-0.6.0"
+      sources."tweetnacl-0.14.5"
+      sources."type-is-1.6.18"
+      sources."typedarray-0.0.6"
+      sources."ultron-1.0.2"
+      sources."unpipe-1.0.0"
+      sources."uri-js-4.2.2"
+      sources."util-deprecate-1.0.2"
+      sources."utils-merge-1.0.1"
+      sources."uuid-3.3.2"
+      sources."vary-1.1.2"
+      sources."verror-1.10.0"
+      (sources."ws-3.3.1" // {
+        dependencies = [
+          sources."ultron-1.1.1"
+        ];
+      })
+      sources."xtend-4.0.1"
+    ];
+    buildInputs = globalBuildInputs;
+    meta = {
+      description = "A tool that allows you analyse your Elm code and identifies deficiencies and best practices.";
+      license = "MIT";
     };
     production = true;
     bypassCache = true;
