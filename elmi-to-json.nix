@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {}, compiler ? "ghc864" }:
 
 let
-  version = "0.19.3";
+  version = "0.19.4";
 
   cabalPkg =
     { mkDerivation, aeson, async, base, binary, bytestring, containers
@@ -15,7 +15,7 @@ let
         owner = "stoeffel";
         repo = "elmi-to-json";
         rev = version;
-        sha256 = "0s32929q1xfqnrh5lv1xjhw5wmjdcm4c19hkdg8835px4kir9899";
+        sha256 = "1hcggk4p3slhmfhzi6ah1h1jap34kiidbbf92jr4b7i0rwv1s18r";
       };
       patches = [ ./patches/elmi-to-json.patch ];
       isLibrary = true;
@@ -41,12 +41,12 @@ let
         if stdenv.isDarwin then
           fetchurl {
             url = "https://github.com/stoeffel/elmi-to-json/releases/download/${version}/elmi-to-json-${version}-osx.tar.gz";
-            sha256 = "0hz3nr0bi0dlrxrwpnrv11q66acy77flz90f0p4bj65rypkrc7h6";
+            sha256 = "1l0ny081lr3lvndcqfzrgznz9xajarjbihiwbf4hvb13bg3ngbj3";
           }
         else
           fetchurl {
             url = "https://github.com/stoeffel/elmi-to-json/releases/download/${version}/elmi-to-json-${version}-linux.tar.gz";
-            sha256 = "021zwpqicymxn2sn4m521a0awrv1zlfsm63hs648ldl8242lks4m";
+            sha256 = "1gccza38wfgyyhpb98710lwam85v1a3wnzjsbpkihs6cvwkwyj32";
           };
 
       unpackPhase = ''
