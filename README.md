@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/turboMaCk/nix-elm-tools.svg?branch=master)](https://travis-ci.org/turboMaCk/nix-elm-tools)
 
-**This project is [now merged to nixpkgs](https://github.com/NixOS/nixpkgs/pull/63477)!** Support of this version will continue for now changes make it to the stable release of nix.
+**This project is [now merged to nixpkgs](https://github.com/NixOS/nixpkgs/pull/63477)!**.
+This repository remains maitained till nixpkgs stable relase will include this change.
 
 [Elm](https://elm-lang.org/) lang community tooling
 for the [Nix package manager](https://nixos.org/nix/) and [NixOS](http://nixos.org)
