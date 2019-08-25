@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/turboMaCk/nix-elm-tools.svg?branch=master)](https://travis-ci.org/turboMaCk/nix-elm-tools)
 
-**This project is [now merged to nixpkgs](https://github.com/NixOS/nixpkgs/pull/63477)!** Support of this version will continue for now changes make it to the stable release of nix.
+**This project is [now merged to nixpkgs](https://github.com/NixOS/nixpkgs/pull/63477)!**.
+This repository remains maitained till nixpkgs stable relase will include this change.
 
 [Elm](https://elm-lang.org/) lang community tooling
 for the [Nix package manager](https://nixos.org/nix/) and [NixOS](http://nixos.org)
@@ -47,6 +48,8 @@ Tooling provided so far:
 - [`elm-doc-preview`](https://github.com/dmy/elm-doc-preview)
 - [`elmi-to-json`](https://github.com/stoeffel/elmi-to-json)
 - [`elm-upgrade`](https://github.com/avh4/elm-upgrade)
+- [`elm-live`](https://github.com/wking-io/elm-live)
+- [`elm-xref`](https://github.com/zwilias/elm-xref)
 
 If you miss your favorite tool, feel free to open an issue or submit a PR.
 
