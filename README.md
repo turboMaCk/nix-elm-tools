@@ -47,6 +47,8 @@ Tooling provided so far:
 - [`elm-doc-preview`](https://github.com/dmy/elm-doc-preview)
 - [`elmi-to-json`](https://github.com/stoeffel/elmi-to-json)
 - [`elm-upgrade`](https://github.com/avh4/elm-upgrade)
+- [`elm-live`](https://github.com/wking-io/elm-live)
+- [`elm-xref`](https://github.com/zwilias/elm-xref)
 
 If you miss your favorite tool, feel free to open an issue or submit a PR.
 
