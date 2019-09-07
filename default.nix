@@ -18,9 +18,7 @@ let
 in rec {
   elm-test = patchBinwrap [elmi-to-json] elmNodePackages.elm-test;
   elm-verify-examples = patchBinwrap [elmi-to-json] elmNodePackages.elm-verify-examples;
-  elm-language-server = elmNodePackages."@elm-tooling/elm-language-server".override {
-    buildInputs = [ pkgs.elmPackages.elm pkgs.elmPackages.elm-format elm-test ];
-  };
+  elm-language-server = elmNodePackages."@elm-tooling/elm-language-server";
   inherit elmi-to-json;
   inherit (elmNodePackages) elm-analyse elm-doc-preview elm-upgrade;
 }
