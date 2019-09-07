@@ -50,6 +50,7 @@ Tooling provided so far:
 - [`elm-upgrade`](https://github.com/avh4/elm-upgrade)
 - [`elm-live`](https://github.com/wking-io/elm-live)
 - [`elm-xref`](https://github.com/zwilias/elm-xref)
+- [`elm-language-server`](https://github.com/elm-tooling/elm-language-server)
 
 If you miss your favorite tool, feel free to open an issue or submit a PR.
 
@@ -78,8 +79,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "a88d0ccd13179a9e800db6583b3397f925e1aa5b";
-    sha256 = "0q73zm53kf5is1c6k5ab7jn3cxpghagsykc0yc7dhq97cs2dgwi9";
+    rev = "45f5db65fc2453e757c60ae54c611d1d8baa20cf";
+    sha256 = "1gc3p5xivb2k9jm22anzm6xy1cnzw2ab6jq8ifws92pvfnvx0lxv";
   }) { inherit pkgs; };
 in
 {
@@ -95,8 +96,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "a88d0ccd13179a9e800db6583b3397f925e1aa5b";
-    sha256 = "0q73zm53kf5is1c6k5ab7jn3cxpghagsykc0yc7dhq97cs2dgwi9";
+    rev = "45f5db65fc2453e757c60ae54c611d1d8baa20cf";
+    sha256 = "1gc3p5xivb2k9jm22anzm6xy1cnzw2ab6jq8ifws92pvfnvx0lxv";
   }) { inherit pkgs; };
 in
   with pkgs;
@@ -113,8 +114,8 @@ let
   elmTools = import (pkgs.fetchFromGitHub {
     owner = "turboMaCk";
     repo = "nix-elm-tools";
-    rev = "a88d0ccd13179a9e800db6583b3397f925e1aa5b";
-    sha256 = "0q73zm53kf5is1c6k5ab7jn3cxpghagsykc0yc7dhq97cs2dgwi9";
+    rev = "45f5db65fc2453e757c60ae54c611d1d8baa20cf";
+    sha256 = "1gc3p5xivb2k9jm22anzm6xy1cnzw2ab6jq8ifws92pvfnvx0lxv";
   }) { inherit pkgs; };
 in {
   environment.systemPackages = with pkgs.elmPackages; [
@@ -152,8 +153,8 @@ in
 import (pkgs.fetchFromGitHub {
   owner = "turboMaCk";
   repo = "nix-elm-tools";
-  rev = "a88d0ccd13179a9e800db6583b3397f925e1aa5b";
-  sha256 = "0q73zm53kf5is1c6k5ab7jn3cxpghagsykc0yc7dhq97cs2dgwi9";
+  rev = "45f5db65fc2453e757c60ae54c611d1d8baa20cf";
+  sha256 = "1gc3p5xivb2k9jm22anzm6xy1cnzw2ab6jq8ifws92pvfnvx0lxv";
 }) { inherit pkgs; compileHS = true; }
 ```
 
